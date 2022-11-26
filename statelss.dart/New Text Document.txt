@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+Widget buildCenter(){
+Widget center =Center(
+  child: Text(
+  'We are here!',
+  style: TextStyle(fontSize: 25),
+
+  ),
+  );
+return center;
+}
+
+void main() {
+  Widget body = buildCenter();
+  MaterialApp app = MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(
+        title: Text(
+            'hello'
+        ),
+
+      ),
+      body: body,
+    ),
+  );
+  runApp(app);
+}
